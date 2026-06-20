@@ -5,7 +5,7 @@
 
 ## Sources
 
-_No sources yet. Add documents to `sources/` to start._
+115 Wikipedia articles on data-intensive application topics. See [ATTRIBUTION.md](ATTRIBUTION.md).
 
 ## Certification
 
@@ -14,8 +14,9 @@ _No sources yet. Add documents to `sources/` to start._
 
 ## Progress
 
-- Sources: 0
-- Entries generated: 0
-- Beliefs proposed: 0
-- Beliefs accepted: 0
+- Sources: 115
+- Entries generated: 123
+- Beliefs proposed: 762
+- Beliefs accepted: 762
+- Beliefs total: 1134 (1009 IN / 125 OUT)
 - Last exam score: --

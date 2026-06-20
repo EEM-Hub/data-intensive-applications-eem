@@ -1,9 +1,9 @@
 ---
 schema_version: "1.0"
 type: eem
-project_name: "reasons"
-domain: []
-license: mit
+project_name: "data-intensive-applications-eem"
+domain: ["Data Intensive Applications"]
+license: cc-by-sa-4.0
 base_network: null
 source_repos: []
 beliefs_total: 1134
@@ -15,7 +15,7 @@ nogoods: 0
 generator: ftl-reasons/0.48.0
 ---
 
-# Reasons
+# Data Intensive Applications EEM
 
 ## Stats
 
@@ -67,4 +67,6 @@ reasons show <node-id>
 
 ## License
 
-mit
+Sources and entries are derived from Wikipedia articles and licensed under
+[CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
+See [LICENSE](LICENSE) and [ATTRIBUTION.md](ATTRIBUTION.md) for details.
