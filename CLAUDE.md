@@ -1,0 +1,46 @@
+# CLAUDE.md
+
+## Domain
+
+This is an expert agent for **Data Intensive Applications**.
+
+## Key Files
+
+| File | Purpose |
+|------|---------|
+| `entries/` | Chronological documentation entries |
+| `reasons.db` | Reason maintenance database (beliefs with dependency tracking) |
+| `expert-build.md` | Build pipeline config and progress |
+| `sources/` | Source documents |
+
+## Workflow
+
+1. Write entries as you learn things (`entry create topic "Title"`)
+2. Distill beliefs from entries (`reasons add claim-id "What I learned" --source repo:path`)
+3. Track contradictions (`reasons nogood claim-a claim-b`)
+4. Challenge and defend beliefs (`reasons challenge claim-id "reason"`)
+5. Search knowledge (`reasons search "query"`)
+
+## Tools
+
+```bash
+# Entry management
+entry create topic-name "Entry Title"
+
+# Reason maintenance
+reasons add claim-id "What I learned" --source repo:path
+reasons retract claim-id --reason "why"
+reasons challenge claim-id "reason for doubt"
+reasons defend claim-id challenge-id "defense"
+reasons explain claim-id
+reasons search "query"
+reasons check-stale
+reasons status
+
+# Expert build pipeline
+expert-build status
+expert-build summarize
+expert-build propose-beliefs
+expert-build cert-coverage objectives/file.md
+expert-build exam questions/file.md
+```
