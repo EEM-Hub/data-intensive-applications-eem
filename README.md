@@ -54,6 +54,18 @@ reasons show <node-id>
 | `reasons.db` | SQLite database (gitignored, regenerate with `reasons import-json network.json`) |
 | `README.md` | This EEM card |
 
+## Exam Results
+
+42 multiple-choice questions across 13 topic areas (42 objectives).
+
+| Model | With Beliefs | Control | Agentic |
+|-------|-------------|---------|---------|
+| claude:opus | 42/42 (100%) | 42/42 (100%) | 42/42 (100%) |
+| claude:sonnet | 42/42 (100%) | 42/42 (100%) | 42/42 (100%) |
+| claude:haiku | 42/42 (100%) | 42/42 (100%) | 40/42 (95%) |
+
+See [`results/`](results/) for detailed per-question breakdowns.
+
 ## Quality
 
 - 1009 beliefs IN, 125 OUT
